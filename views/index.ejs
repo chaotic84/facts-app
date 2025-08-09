@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=VT323&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <title>Chuck facts</title>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Chuck facts</h2>
+    </div>
+    <div class="container">
+      <div class="img-container">
+        <img src="/images/chuck.jpg" />
+        <p class="small-text">
+          I don't want your display to break, so here's an image of a drill
+          chuck instead ;-)
+        </p>
+      </div>
+      <% if (locals.error === undefined) { %>
+      <p class="chuck-fact"><%= content.value %></p>
+      <% } else { %>
+      <p class="error"><%= error %></p>
+      <% } %>
+    </div>
+    <div class="container">
+      <p class="small-text">
+        This app uses the random API at
+        <a href="https://api.chucknorris.io/">api.chucknorris.io</a>.
+      </p>
+      <p class="small-text">
+        Legal disclaimer: This website and its creators are not affiliated with
+        Chuck Norris, any motion picture corporation, any television
+        corporation, parent, or affiliate corporation. All motion pictures,
+        products, and brands mentioned on this website are the respective
+        trademarks and copyrights of their owners. All material on this website
+        is intended for humorous entertainment (satire ) purposes only. The
+        content on this website is not necessarily true and should not be
+        regarded as truth.
+      </p>
+    </div>
+  </body>
+</html>
