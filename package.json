@@ -1,0 +1,16 @@
+{
+  "name": "facts-app",
+  "version": "0.1.0",
+  "description": "App utilizing a public API to retrieve and display facts to the user",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maurice C",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.11.0",
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
